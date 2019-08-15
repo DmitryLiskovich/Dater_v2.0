@@ -1,0 +1,61 @@
+.add {
+  &-user {
+    transition: all ease-in-out 1s;
+    background-color: #00000088;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1050;
+    top: 0;
+    left: 0;
+    &-close {
+      font-size: 1.2rem;
+      transition: all ease-in-out 0.5s;
+      margin-left: 270px;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        color: plum;
+        transform: rotate(180deg);
+      }
+    }
+    &-form {
+      border-radius: 10px;
+      height: 450px;
+      background: linear-gradient(
+        40deg,
+        rgba(105, 2, 208, 1) 0%,
+        rgba(205, 0, 255, 1) 100%
+      );
+      box-shadow: #00000055 10px 10px 10px;
+      width: 300px;
+      position: absolute;
+      top: 10vh;
+      left: 40vw;
+      transform: translateX(-50%);
+      padding-top: 10px;
+      &-center {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &-input {
+      width: 80%;
+      margin: auto;
+    }
+    &-lable {
+      color: #ddd;
+      display: block;
+      width: 80%;
+      margin: auto;
+    }
+    &-button {
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      width: 80%;
+    }
+  }
+}
